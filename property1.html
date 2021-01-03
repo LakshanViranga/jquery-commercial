@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+    <link rel="stylesheet" href="css/zoomifyc.css">
+
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="js/zoomifyc.js"></script>
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion({
+                event: "mouseover"
+            });
+        } );
+    </script>
+    <script>
+        $( function () {
+            $("#tabs").tabs({
+                event: "mouseover"
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            zoomifyc.init($('#imgBox img'));
+        });
+    </script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Travel Ceylon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="search.html">Search</a>
+                <a class="nav-link" href="#">Favourite</a>
+                <a class="nav-link" href="destination.html" tabindex="-1" aria-disabled="true">Destination</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6" style="padding: 3%">
+            <img src="./images/prop1pic2small.jpg" class="d-block w-100" alt="">
+            <div class="row">
+                <div class="col-12" style="padding: 3%">
+                    <div id="imgBox">
+                        <img src="images/prop1pic3.jpg" alt="" width="15%" height="10%">
+                        <img src="images/prop1pic2.jpg" alt="" width="15%" height="10%">
+                        <img src="images/prop1pic1.jpg" alt="" width="15%" height="10%">
+                        <img src="images/prop1pic4.jpg" alt="" width="15%" height="10%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6" style="padding: 3%">
+            <div class="text-center">
+                <h2 style="padding-bottom: 2% ">Property Name 1</h2>
+                <div class="accordion" id="accordion">
+                    <h3>Property Type</h3>
+                    <div>
+                        <h4>Flat</h4>
+                    </div>
+                    <h3>Price</h3>
+                    <div>
+                        <p>299999</p>
+                    </div>
+                    <h3>Bed Rooms</h3>
+                    <div>
+                        <p>4 or 6 Rooms</p>
+                    </div>
+                </div>
+                <br>
+                <button class="form-control btn btn-success btn-block">Add to Favourite</button>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding: 3%">
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Description</a></li>
+                <li><a href="#tabs-2">Location</a></li>
+                <li><a href="#tabs-3">Floor Map</a></li>
+            </ul>
+            <div id="tabs-1">
+                <div class="row">
+                    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                </div>
+            </div>
+            <div id="tabs-2">
+                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+            </div>
+            <div id="tabs-3">
+                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="js/bootstrap.min.js"/>
+<script src="js/jquery-3.3.1.min.js" />
+</body>
+</html>
