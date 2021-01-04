@@ -72,3 +72,4 @@ $(function () {
             document.getElementById("placeholder").innerHTML = output
     });
 });
+

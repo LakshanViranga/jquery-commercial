@@ -12,6 +12,7 @@
     <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="../js/zoomifyc.js"></script>
+    <script src="../js/prop1.js"></script>
     <script>
         $( function() {
             $( "#accordion" ).accordion({
@@ -45,7 +46,7 @@
             <div class="navbar-nav">
                 <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-link" href="../search.html">Search</a>
-                <a class="nav-link" href="#">Favourite</a>
+                <a class="nav-link" href="../favourite.html">Favourite</a>
                 <a class="nav-link" href="../destination.html" tabindex="-1" aria-disabled="true">Destination</a>
             </div>
         </div>
@@ -54,12 +55,14 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-6" style="padding: 3%">
-            <img src="../images/prop1pic2.jpg" class="d-block w-100" alt="">
+            <img src="../images/prop1pic2.jpg" class="d-block w-100" alt="" id="img">
             <div class="row">
                 <div class="col-12" style="padding: 3%">
                     <div id="imgBox">
                         <img src="../images/prop1pic3.jpg" alt="" width="15%" height="10%">
                         <img src="../images/prop1pic2.jpg" alt="" width="15%" height="10%">
+                        <img src="../images/prop1pic1.jpg" alt="" width="15%" height="10%">
+                        <img src="../images/prop1pic4.jpg" alt="" width="15%" height="10%">
                         <img src="../images/prop1pic1.jpg" alt="" width="15%" height="10%">
                         <img src="../images/prop1pic4.jpg" alt="" width="15%" height="10%">
                     </div>
@@ -68,7 +71,7 @@
         </div>
         <div class="col-6" style="padding: 3%">
             <div class="text-center">
-                <h2 style="padding-bottom: 2% ">Property Name 1</h2>
+                <h2 style="padding-bottom: 2%" id="prop1">Property Name 1</h2>
                 <div class="accordion" id="accordion">
                     <h3>Property Type</h3>
                     <div>
@@ -84,7 +87,9 @@
                     </div>
                 </div>
                 <br>
-                <button class="form-control btn btn-success btn-block" id="favourite">Add to Favourite</button>
+
+                <button class="form-control btn btn-outline-primary btn-block" id="favourite">Add to Favourite</button>
+                <button class="form-control btn btn-outline-warning btn-block" id="remove">Remove Favourite</button>
             </div>
         </div>
     </div>
@@ -97,7 +102,7 @@
             </ul>
             <div id="tabs-1">
                 <div class="row">
-                    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                    <p id="des">Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
                 </div>
             </div>
             <div id="tabs-2">
