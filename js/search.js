@@ -61,9 +61,9 @@ $(function () {
                  console.log(data.properties[i].type)
                 if ((minBed <= data.properties[i].bedrooms) && (maxBed >= data.properties[i].bedrooms)){
                     if ((data.properties[i].price >= minPrice) && (data.properties[i].price <= maxPrice)) {
-                        if((beginDate <= data.properties[i].added.month)&&(endDate >= data.properties[i].added.month)){
+                        //if((beginDate <= data.properties[i].added.month)&&(endDate >= data.properties[i].added.month)){
                         output+= "<h4><li>"+"LKR"+ data.properties[i].price +"</li></h4>" + "<img src="+ data.properties[i].picture+">"+"<p>"+data.properties[i].description+"</p>"+"<button class='btn btn-outline-primary '><a href='"+data.properties[i].url+"'>More Details</a></button>";
-                        }
+                        //}
                     }
                 }
             }
